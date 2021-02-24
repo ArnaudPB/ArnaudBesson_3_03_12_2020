@@ -1,0 +1,135 @@
+/*Reset*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+
+/*Typography*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Shrikhand&display=swap');
+
+/* Colors */
+
+$color-primary: #9356DC;
+$color-light-primary: #F4EDFE;
+$color-secondary: #FF79DA;
+$color-dark-tertiary: #288364;
+$color-tertiary: #99E2D0;
+$color-black: #000000;
+$color-light-black: #353535;
+$color-dark-grey: #6B6B6B;
+$color-grey: #EAEAEA;
+$color-light-grey: #F6F6F6;
+$color-white: #FFFFFF;
+
+/* shape */
+
+$shape-medium-component-radius: 20px;
+$shape-small-component-radius: 15px;
+
+/* Test container */
+
+@mixin container($top,
+$bottom) {
+    padding: $top 5vw $bottom 5vw;
+    width: 90vw;
+}
+
+
+/* general class */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.2;
+    color: $color-black;
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+h3 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.2
+}
+
+a {
+    color: $color-black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.fas .far {
+    font-size: 1.25rem;
+    color: $color-black;
+}
+
+
+/* Header */
+
+.header {
+    &--section {
+        position: relative;
+        z-index: 1;
+        box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
+    }
+    &__wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+        position: relative;
+    }
+    &__wrapper-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        left: 1rem;
+    }
+}
+
+.footer {
+    &__section {
+        @include container(2rem,
+        2rem);
+        background: $color-light-black;
+    }
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    &__logo {
+        color: white;
+        font-family: 'Shrikhand', cursive;
+        font-size: 1.25rem;
+        margin-bottom: 1rem;
+    }
+    &__column {
+        &__item {
+            margin-bottom: 0.5rem;
+        }
+        &__link {
+            color: $color-white;
+        }
+        .fa-ustensils,
+        .fa-hands-helping {
+            margin-right: 0.5;
+        }
+    }
+}

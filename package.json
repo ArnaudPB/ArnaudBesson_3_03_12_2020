@@ -1,0 +1,19 @@
+{
+    "name": "arnaudbesson_3_03_12_2020",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "sass": "sass --watch ./src/sass/main.scss:src/style/stylesheet.css"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ArnaudPB/ArnaudBesson_3_03_12_2020.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/ArnaudPB/ArnaudBesson_3_03_12_2020/issues"
+    },
+    "homepage": "https://github.com/ArnaudPB/ArnaudBesson_3_03_12_2020#readme"
+}

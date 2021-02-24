@@ -1,0 +1,100 @@
+/* Location */
+
+.location {
+    &__section {
+        @include container(0rem, 0rem);
+        background: $color-grey;
+    }
+    &__result {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        color: $color-light-black;
+        background: $color-grey;
+    }
+    &__wrapper-icon {
+        margin-right: 1rem;
+    }
+}
+
+
+/* banner */
+
+.banner {
+    &__section {
+        @include container(2rem, 3rem);
+        background: $color-light-grey;
+    }
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    &__header {
+        &__title {
+            margin: 0rem 2em 1rem 2rem;
+        }
+        &__subtitle {
+            margin-bottom: 1.5;
+            font-size: 1.125;
+            font-weight: 300;
+            color: $color-light-black;
+        }
+    }
+}
+
+
+/* functioning */
+
+.functioning {
+    &__section {
+        @include container(2rem, 3rem);
+    }
+    &__header {
+        margin-bottom: 2rem;
+    }
+    &__cards {
+        display: flex;
+        flex-direction: column;
+    }
+    &__card {
+        display: flex;
+        flex-direction: row;
+        margin-left: 1rem;
+        margin-bottom: 1.5rem;
+        padding: 1.75rem 2rem;
+        position: relative;
+        background: $color-light-grey;
+        border-radius: $shape-medium-component-radius;
+        box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+        transition-duration: 1s;
+        &:hover {
+            background: $color-light-primary;
+            .functioning__card__wrapper-icon {
+                color: $color-primary;
+            }
+        }
+        &__number {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.5rem;
+            width: 0.5rem;
+            height: 0.5rem;
+            color: $color-white;
+            position: absolute;
+            left: -1rem;
+            background: $color-primary;
+            border-radius: $shape-small-component-radius;
+        }
+        &__wrapper-icon {
+            margin-right: 1.5rem;
+            color: $color-dark-grey;
+        }
+        &__title {
+            font-weight: 500;
+        }
+    }
+}
