@@ -334,7 +334,7 @@ a {
 }
 
 @media (min-width: 768px) {
-  .restaurant__cards {
+  .restaurants__cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
