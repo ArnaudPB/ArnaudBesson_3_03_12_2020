@@ -1,7 +1,13 @@
 /* Base */
 
 @import "./base/base.scss";
+@import "./base/animations.scss";
+
+/*components*/
+
+@import "./components/buttons.scss";
 
 /* page */
 
 @import "./pages/homepage.scss";
+@import "./pages/restaurants.scss";

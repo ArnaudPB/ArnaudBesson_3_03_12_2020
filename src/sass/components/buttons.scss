@@ -1,0 +1,18 @@
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: $color-white;
+    background: linear-gradient($color-secondary, $color-primary);
+    border: none;
+    border-radius: $shape-small-component-radius;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    &:hover {
+        background: linear-gradient(to bottom, rgba(255, 121, 218, 0.8) 100%);
+        box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.4);
+    }
+}

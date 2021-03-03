@@ -27,8 +27,9 @@ $color-white: #FFFFFF;
 
 /* shape */
 
+$shape-small-component-radius: 100px;
 $shape-medium-component-radius: 20px;
-$shape-small-component-radius: 15px;
+$shape-large-component-radius: 15px;
 
 /* Test container */
 
@@ -38,6 +39,11 @@ $bottom) {
     width: 90vw;
 }
 
+
+/* responsive tool */
+
+$breapoint-desktop: 1140px;
+$breakpoint-tablet: 768px;
 
 /* general class */
 
