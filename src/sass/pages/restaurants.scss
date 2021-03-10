@@ -84,8 +84,8 @@
         &__header__subtitle {
             height: 100%;
             font-weight: 300;
-            text-overflow: ellipsis;
             white-space: nowrap;
+            text-overflow: ellipsis;
             overflow: hidden;
         }
         &__price {
@@ -155,7 +155,7 @@
             -webkit-text-fill-color: transparent;
         }
         &__wrapper-icon--2 {
-            transition-duration: 0.3s;
+            transition-duration: 0.6s;
             &:hover {
                 opacity: 0%;
             }
@@ -211,13 +211,13 @@
         @include parts;
         &__card {
             &--delay-1 {
-                animation-delay: 0s;
+                animation-delay: 1s;
             }
             &--delay-2 {
-                animation-delay: 0.3s;
+                animation-delay: 1.3s;
             }
             &--delay-3 {
-                animation-delay: 0.6s;
+                animation-delay: 1.6s;
             }
             &:hover {
                 .menu__dishes__card__price {
@@ -239,13 +239,13 @@
         @include parts;
         &__card {
             &--delay-1 {
-                animation-delay: 0s;
+                animation-delay: 2s;
             }
             &--delay-2 {
-                animation-delay: 0.3s;
+                animation-delay: 2.3s;
             }
             &--delay-3 {
-                animation-delay: 0.6s;
+                animation-delay: 2.6s;
             }
             &:hover {
                 .menu__desserts__card__price {

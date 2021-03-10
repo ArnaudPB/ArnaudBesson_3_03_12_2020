@@ -88,7 +88,7 @@ a {
 /* Header */
 
 .header {
-    &--section {
+    &__section {
         position: relative;
         z-index: 1;
         box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
@@ -130,10 +130,10 @@ a {
         &__item {
             margin-bottom: 0.5rem;
         }
-        &__link {
+        &__anchor {
             color: $color-white;
         }
-        .fa-ustensils,
+        .fa-utensils,
         .fa-hands-helping {
             margin-right: 0.5;
         }

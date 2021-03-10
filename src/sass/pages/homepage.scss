@@ -9,11 +9,16 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
+        padding: 1rem 0rem;
         color: $color-light-black;
         background: $color-grey;
-    }
-    &__wrapper-icon {
-        margin-right: 1rem;
+        &__wrapper-icon {
+            margin-right: 1rem;
+        }
+        &__address {
+            font-size: large;
+            font-weight: 900
+        }
     }
 }
 
@@ -166,7 +171,7 @@
             position: relative;
         }
         &__title {
-            margin-bottom: 0.25rem;
+            margin-bottom: .25rem;
         }
         &__subtitle {
             font-weight: 300;
@@ -182,17 +187,18 @@
             background: $color-white;
         }
         &__wrapper-icon--1 {
-            background: -webkit-gradient($color-secondary, $color-primary);
+            background: -webkit-linear-gradient($color-secondary, $color-primary);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
         &__wrapper-icon--2 {
-            transition-duration: 0.3s;
+            transition-duration: 1.20s;
             &:hover {
                 opacity: 0%;
             }
         }
         .fa-heart {
+            font-weight: 400;
             font-size: 1.75rem;
         }
     }

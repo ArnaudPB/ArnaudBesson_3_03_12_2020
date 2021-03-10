@@ -51,7 +51,7 @@ a {
 }
 
 /* Header */
-.header--section {
+.header__section {
   position: relative;
   z-index: 1;
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
@@ -90,10 +90,10 @@ a {
 .footer__column__item {
   margin-bottom: 0.5rem;
 }
-.footer__column__link {
+.footer__column__anchor {
   color: #FFFFFF;
 }
-.footer__column .fa-ustensils,
+.footer__column .fa-utensils,
 .footer__column .fa-hands-helping {
   margin-right: 0.5;
 }
@@ -157,11 +157,16 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  padding: 1rem 0rem;
   color: #353535;
   background: #EAEAEA;
 }
-.location__wrapper-icon {
+.location__result__wrapper-icon {
   margin-right: 1rem;
+}
+.location__result__address {
+  font-size: large;
+  font-weight: 900;
 }
 
 /* banner */
@@ -319,17 +324,18 @@ a {
   background: #FFFFFF;
 }
 .restaurants__card__wrapper-icon--1 {
-  background: -webkit-gradient(#FF79DA, #9356DC);
+  background: -webkit-linear-gradient(#FF79DA, #9356DC);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .restaurants__card__wrapper-icon--2 {
-  transition-duration: 0.3s;
+  transition-duration: 1.2s;
 }
 .restaurants__card__wrapper-icon--2:hover {
   opacity: 0%;
 }
 .restaurants__card .fa-heart {
+  font-weight: 400;
   font-size: 1.75rem;
 }
 
@@ -410,7 +416,7 @@ a {
   -webkit-text-fill-color: transparent;
 }
 .menu__header__wrapper-icon--2 {
-  transition-duration: 0.3s;
+  transition-duration: 0.6s;
 }
 .menu__header__wrapper-icon--2:hover {
   opacity: 0%;
@@ -482,8 +488,8 @@ a {
 .menu__starters__card__header__subtitle {
   height: 100%;
   font-weight: 300;
-  text-overflow: ellipsis;
   white-space: nowrap;
+  text-overflow: ellipsis;
   overflow: hidden;
 }
 .menu__starters__card__price {
@@ -600,8 +606,8 @@ a {
 .menu__dishes__card__header__subtitle {
   height: 100%;
   font-weight: 300;
-  text-overflow: ellipsis;
   white-space: nowrap;
+  text-overflow: ellipsis;
   overflow: hidden;
 }
 .menu__dishes__card__price {
@@ -629,13 +635,13 @@ a {
   color: #FFFFFF;
 }
 .menu__dishes__card--delay-1 {
-  animation-delay: 0s;
+  animation-delay: 1s;
 }
 .menu__dishes__card--delay-2 {
-  animation-delay: 0.3s;
+  animation-delay: 1.3s;
 }
 .menu__dishes__card--delay-3 {
-  animation-delay: 0.6s;
+  animation-delay: 1.6s;
 }
 .menu__dishes__card:hover .menu__dishes__card__price {
   animation: slide 1s;
@@ -708,8 +714,8 @@ a {
 .menu__desserts__card__header__subtitle {
   height: 100%;
   font-weight: 300;
-  text-overflow: ellipsis;
   white-space: nowrap;
+  text-overflow: ellipsis;
   overflow: hidden;
 }
 .menu__desserts__card__price {
@@ -737,13 +743,13 @@ a {
   color: #FFFFFF;
 }
 .menu__desserts__card--delay-1 {
-  animation-delay: 0s;
+  animation-delay: 2s;
 }
 .menu__desserts__card--delay-2 {
-  animation-delay: 0.3s;
+  animation-delay: 2.3s;
 }
 .menu__desserts__card--delay-3 {
-  animation-delay: 0.6s;
+  animation-delay: 2.6s;
 }
 .menu__desserts__card:hover .menu__desserts__card__price {
   animation: slide 1s;
