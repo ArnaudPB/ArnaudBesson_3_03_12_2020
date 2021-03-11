@@ -132,10 +132,10 @@ a {
         }
         &__anchor {
             color: $color-white;
-        }
-        .fa-utensils,
-        .fa-hands-helping {
-            margin-right: 0.5;
+            .fa-utensils,
+            .fa-hands-helping {
+                margin-right: 0.75rem;
+            }
         }
     }
 }
