@@ -147,7 +147,7 @@
             height: 2rem;
             position: absolute;
             right: 1rem;
-            background: $color-white;
+            background: white;
         }
         &__wrapper-icon--1 {
             background: -webkit-linear-gradient($color-secondary, $color-primary);
@@ -188,6 +188,7 @@
                 .menu__starters__header__subtitle {
                     height: 100%;
                     font-weight: 300;
+                    display: flex;
                     text-overflow: ellipsis;
                     white-space: nowrap;
                     overflow: hidden

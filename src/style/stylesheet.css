@@ -93,9 +93,9 @@ a {
 .footer__column__anchor {
   color: #FFFFFF;
 }
-.footer__column .fa-utensils,
-.footer__column .fa-hands-helping {
-  margin-right: 0.5;
+.footer__column__anchor .fa-utensils,
+.footer__column__anchor .fa-hands-helping {
+  margin-right: 0.75rem;
 }
 
 @keyframes appearance {
