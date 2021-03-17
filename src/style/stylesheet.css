@@ -119,8 +119,8 @@ a {
   height: 100%;
   transform-origin: left;
   transform: scaleX(0.5);
-  -webkit-animation: progress-bar 3000ms 150ms both;
-  animation: progress-bar 3000ms 150ms both;
+  -webkit-animation: progress__bar 3000ms 150ms both;
+  animation: progress__bar 3000ms 150ms both;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
