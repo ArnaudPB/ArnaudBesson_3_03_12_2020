@@ -80,6 +80,8 @@
             margin-bottom: 0.25rem;
             font-size: 1.25rem;
             font-weight: 500;
+            white-space: nowrap;
+            text-overflow: ellipsis;
         }
         &__header__subtitle {
             height: 100%;
@@ -138,6 +140,9 @@
         &__title {
             font-family: 'Shrikhand', cursive;
             font-size: 1.75rem;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
         }
         &__wrapper-icon {
             display: flex;
@@ -191,7 +196,10 @@
                     display: flex;
                     text-overflow: ellipsis;
                     white-space: nowrap;
-                    overflow: hidden
+                    overflow: hidden;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;
                 }
                 .menu__starters__card__price {
                     animation: slide 1s;

@@ -1,9 +1,12 @@
 /*Reset*/
 
-* {
+*,
+ ::after,
+ ::before {
     margin: 0px;
     padding: 0px;
     list-style: none;
+    box-sizing: inherit;
 }
 
 
@@ -138,4 +141,40 @@ a {
             }
         }
     }
+}
+
+
+/*Loading screen*/
+
+.loading {
+    margin-top: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+    z-index: -1;
+    & .progress {
+        width: 50vw;
+        height: 1vw;
+        &__bar {
+            background: linear-gradient(to right, $color-primary, $color-secondary, $color-tertiary);
+            height: 100%;
+            transform-origin: left;
+            transform: scaleX(0.5);
+            -webkit-animation: progress-bar 3000ms 150ms both;
+            animation: progress-bar 3000ms 150ms both;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+        }
+    }
+}
+
+.And__homepage {
+    -webkit-animation: site 500ms 3000ms both;
+    animation: site 500ms 3000ms both;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 1;
 }

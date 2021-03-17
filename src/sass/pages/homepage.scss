@@ -188,7 +188,7 @@
         }
         &__wrapper-icon--1 {
             background: -webkit-linear-gradient($color-secondary, $color-primary);
-            //-webkit-background-clip: text;
+            -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
         &__wrapper-icon--2 {
@@ -198,7 +198,6 @@
             }
         }
         .fa-heart {
-            font-weight: 900;
             font-size: 1.75rem;
         }
     }

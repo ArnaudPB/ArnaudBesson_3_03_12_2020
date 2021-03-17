@@ -28,3 +28,74 @@
         transform: translateX(-4rem);
     }
 }
+
+@-webkit-keyframes progress__bar {
+    0% {
+        transform: scaleX(0);
+    }
+    17% {
+        transform: scaleX(0.18);
+    }
+    24% {
+        transform: scaleX(0.4);
+        -webkit-animation-timing-function: cubic-bezier(0.9, 0, 0.1, 1);
+        animation-timing-function: cubic-bezier(0.9, 0, 0.1, 1);
+    }
+    46% {
+        transform: scaleX(0.81);
+        -webkit-animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+        animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    90% {
+        transform: scaleX(1);
+    }
+    100% {
+        transform: scaleX(-9000);
+        opacity: 0;
+    }
+}
+
+@keyframes progress__bar {
+    0% {
+        transform: scaleX(0);
+    }
+    17% {
+        transform: scaleX(0.18);
+    }
+    24% {
+        transform: scaleX(0.4);
+        -webkit-animation-timing-function: cubic-bezier(0.9, 0, 0.1, 1);
+        animation-timing-function: cubic-bezier(0.9, 0, 0.1, 1);
+    }
+    46% {
+        transform: scaleX(0.81);
+        -webkit-animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+        animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    70% {
+        transform: scaleX(0.9);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scaleX(1);
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes site {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes site {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
