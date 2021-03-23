@@ -635,12 +635,14 @@ a {
 .menu__starters__card--delay-4 {
   animation-delay: 0.9s;
 }
-.menu__starters__card:hover p {
-  display: block;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  max-width: 210px;
-  max-height: 200px;
+@media (max-width: 450px) {
+  .menu__starters__card:hover p {
+    display: block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 210px;
+    max-height: 200px;
+  }
 }
 .menu__starters__card:hover .menu__starters__header__title {
   height: 100%;
@@ -770,12 +772,14 @@ a {
 .menu__dishes__card--delay-3 {
   animation-delay: 1.6s;
 }
-.menu__dishes__card:hover p {
-  display: block;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  max-width: 210px;
-  max-height: 200px;
+@media (max-width: 450px) {
+  .menu__dishes__card:hover p {
+    display: block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 210px;
+    max-height: 200px;
+  }
 }
 .menu__dishes__card:hover .menu__dishes__card__price {
   animation: slide 1s;
@@ -889,12 +893,14 @@ a {
 .menu__desserts__card--delay-3 {
   animation-delay: 2.6s;
 }
-.menu__desserts__card:hover p {
-  display: block;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  max-width: 210px;
-  max-height: 200px;
+@media (max-width: 450px) {
+  .menu__desserts__card:hover p {
+    display: block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 210px;
+    max-height: 200px;
+  }
 }
 .menu__desserts__card:hover .menu__desserts__card__price {
   animation: slide 1s;
