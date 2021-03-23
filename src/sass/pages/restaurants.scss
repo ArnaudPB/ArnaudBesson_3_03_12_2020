@@ -80,8 +80,10 @@
             margin-bottom: 0.25rem;
             font-size: 1.25rem;
             font-weight: 500;
+            height: 100%;
             white-space: nowrap;
             text-overflow: ellipsis;
+            overflow: hidden;
         }
         &__header__subtitle {
             height: 100%;
@@ -140,9 +142,6 @@
         &__title {
             font-family: 'Shrikhand', cursive;
             font-size: 1.75rem;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            overflow: hidden;
         }
         &__wrapper-icon {
             display: flex;
@@ -190,13 +189,25 @@
                 animation-delay: 0.9s;
             }
             &:hover {
+                & p {
+                    display: block;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    max-width: 210px;
+                    max-height: 200px;
+                }
+                .menu__starters__header__title {
+                    height: 100%;
+                    font-weight: 300;
+                    display: flex;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;
+                }
                 .menu__starters__header__subtitle {
                     height: 100%;
                     font-weight: 300;
                     display: flex;
-                    text-overflow: ellipsis;
-                    white-space: nowrap;
-                    overflow: hidden;
                     display: -webkit-box;
                     -webkit-line-clamp: 3;
                     -webkit-box-orient: vertical;
@@ -229,6 +240,13 @@
                 animation-delay: 1.6s;
             }
             &:hover {
+                & p {
+                    display: block;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    max-width: 210px;
+                    max-height: 200px;
+                }
                 .menu__dishes__card__price {
                     animation: slide 1s;
                     animation-fill-mode: forwards;
@@ -257,6 +275,13 @@
                 animation-delay: 2.6s;
             }
             &:hover {
+                & p {
+                    display: block;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    max-width: 210px;
+                    max-height: 200px;
+                }
                 .menu__desserts__card__price {
                     animation: slide 1s;
                     animation-fill-mode: forwards;
