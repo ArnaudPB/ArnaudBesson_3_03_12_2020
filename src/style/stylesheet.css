@@ -644,21 +644,14 @@ a {
     max-height: 200px;
   }
 }
-.menu__starters__card:hover .menu__starters__header__title {
-  height: 100%;
-  font-weight: 300;
-  display: flex;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-}
-.menu__starters__card:hover .menu__starters__header__subtitle {
-  height: 100%;
-  font-weight: 300;
-  display: flex;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
+@media (max-width: 325px) {
+  .menu__starters__card:hover p {
+    display: block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 140px;
+    max-height: 200px;
+  }
 }
 .menu__starters__card:hover .menu__starters__card__price {
   animation: slide 1s;
@@ -781,6 +774,15 @@ a {
     max-height: 200px;
   }
 }
+@media (max-width: 325px) {
+  .menu__dishes__card:hover p {
+    display: block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 140px;
+    max-height: 200px;
+  }
+}
 .menu__dishes__card:hover .menu__dishes__card__price {
   animation: slide 1s;
   animation-fill-mode: forwards;
@@ -899,6 +901,15 @@ a {
     white-space: nowrap;
     text-overflow: ellipsis;
     max-width: 210px;
+    max-height: 200px;
+  }
+}
+@media (max-width: 325px) {
+  .menu__desserts__card:hover p {
+    display: block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 140px;
     max-height: 200px;
   }
 }
